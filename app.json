@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/search/search",
+    "pages/fileUp/fileUp",
+    "pages/profile/profile",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "校园浏览小程序",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "./images/home.png",
+      "selectedIconPath": "./images/home-select.png"
+    },
+    {
+      "pagePath": "pages/search/search",
+      "text": "搜索",
+      "iconPath": "./images/search.png",
+      "selectedIconPath": "./images/search-select.png"
+    },
+    {
+      "pagePath": "pages/fileUp/fileUp",
+      "text": "文件上传",
+      "iconPath": "./images/file-upload.png",
+      "selectedIconPath": "./images/file-upload-select.png"
+    },
+    {
+      "pagePath": "pages/profile/profile",
+      "text": "我的",
+      "iconPath": "./images/profile.png",
+      "selectedIconPath": "./images/profile-select.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,8 @@
+<view>文件上传</view>
+<view>
+  <input type="text" value="所绑定的学校名" />
+  <input type="text" value="获取用户姓名" disabled />
+  <input type="text" placeholder="输入建筑名称"/>
+  <rich-text></rich-text>
+  <image src="../../images/file-upload.png"></image>
+</view>

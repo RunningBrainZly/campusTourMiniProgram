@@ -1,0 +1,4 @@
+<view class="search" style="text-align: center;">
+  <image src="../../images/search-select.png" style="width: 16px;height: 16px;position: relative;"></image>
+  <input style="position: absolute;" class="search-input" type="text" placeholder="请输入要搜索的学校"/>
+</view>
