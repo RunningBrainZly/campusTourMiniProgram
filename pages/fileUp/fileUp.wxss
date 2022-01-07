@@ -1,1 +1,21 @@
-/* pages/fileUp/fileUp.wxss */
+.clear::before,.clear::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.navBar_text{
+  font-size: 20px;
+  float: left;
+}
+.file_upload_button{
+  float: right;
+  right: 10px;
+}
+.file_upload_form{
+
+}
+.file_upload_form image{
+  width: 250rpx;
+}

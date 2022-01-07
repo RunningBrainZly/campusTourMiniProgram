@@ -1,25 +1,69 @@
-<view>当前查看的学校为：{{schoolName}}</view>
 <swiper autoplay
   indicator-dots
   interval="3000"
   circular
   >
-  <swiper-item><image src="https://mmbiz.qpic.cn/sz_mmbiz_png/DtSAcSmkZRZutTbLkB13T0KtOD8q9yxOvObIX2C1YMEYqP9haAwKPtSs1eh4bwlDI4iaibyfLKT6OB9iaSW0IkMEg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"></image></swiper-item>
-  <swiper-item><image src="https://mmbiz.qpic.cn/sz_mmbiz_png/DtSAcSmkZRaEO2lchugHEeLmFAs2VFWha96rjfFhxZsSJnSKc5yls7Qq0cq24mD6e033QiasOfqINHs5nysMliaA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"></image></swiper-item>
-  <swiper-item><image src="https://mmbiz.qpic.cn/sz_mmbiz_png/DtSAcSmkZRZutTbLkB13T0KtOD8q9yxOUN0yVepEQcCNeHlKC80K2NmfTg9uJiajtQCdRwJYr91ooxNwzicnkR8Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"></image></swiper-item>
+  <swiper-item><image mode="widthFix" src="https://mmbiz.qpic.cn/sz_mmbiz_png/DtSAcSmkZRZutTbLkB13T0KtOD8q9yxOvObIX2C1YMEYqP9haAwKPtSs1eh4bwlDI4iaibyfLKT6OB9iaSW0IkMEg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"></image></swiper-item>
+  <swiper-item><image mode="widthFix" src="https://mmbiz.qpic.cn/sz_mmbiz_png/DtSAcSmkZRaEO2lchugHEeLmFAs2VFWha96rjfFhxZsSJnSKc5yls7Qq0cq24mD6e033QiasOfqINHs5nysMliaA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"></image></swiper-item>
+  <swiper-item><image mode="widthFix" src="https://mmbiz.qpic.cn/sz_mmbiz_png/DtSAcSmkZRZutTbLkB13T0KtOD8q9yxOUN0yVepEQcCNeHlKC80K2NmfTg9uJiajtQCdRwJYr91ooxNwzicnkR8Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"></image></swiper-item>
 </swiper>
-<view class="home-content">
-  <view class="content-wenhua">
-    <view>文化传统</view>
-    <view>
-      <text>aaaaaaaaa</text>
+<view class="home_content">
+
+  <view class="school_info">{{schoolName}}</view>
+
+  <view class="jianzhu_content clear">
+
+    <view class="jianzhu_item clear">
+      <view class="jianzhu_image"><image mode="" src="https://mmbiz.qpic.cn/sz_mmbiz_png/DtSAcSmkZRZutTbLkB13T0KtOD8q9yxOUN0yVepEQcCNeHlKC80K2NmfTg9uJiajtQCdRwJYr91ooxNwzicnkR8Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"></image></view>
+      <view class="jianzhu_text">
+        <view class="jianzhu_name">射击馆</view>
+        <view>aaa</view>
+        <view class="date_style">上传时间：2022-1-1</view>
+      </view>
     </view>
-  </view>
-  <view class="content-jianzhu">
-    <view class="jianzhu-image"><image src="https://mmbiz.qpic.cn/sz_mmbiz_png/DtSAcSmkZRZutTbLkB13T0KtOD8q9yxOUN0yVepEQcCNeHlKC80K2NmfTg9uJiajtQCdRwJYr91ooxNwzicnkR8Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"></image></view>
-    <view class="jianzhu-text">
-      射击馆
-      <view>上传时间：2022-1-1</view>
+
+
+    <view class="jianzhu_item clear">
+      <view class="jianzhu_image"><image mode="" src="https://mmbiz.qpic.cn/sz_mmbiz_png/DtSAcSmkZRZutTbLkB13T0KtOD8q9yxOUN0yVepEQcCNeHlKC80K2NmfTg9uJiajtQCdRwJYr91ooxNwzicnkR8Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"></image></view>
+      <view class="jianzhu_text">
+        <view class="jianzhu_name">射击馆</view>
+        <view>aaa</view>
+        <view class="date_style">上传时间：2022-1-1</view>
+      </view>
     </view>
+
+
+    <view class="jianzhu_item clear">
+      <view class="jianzhu_image"><image mode="" src="https://mmbiz.qpic.cn/sz_mmbiz_png/DtSAcSmkZRZutTbLkB13T0KtOD8q9yxOUN0yVepEQcCNeHlKC80K2NmfTg9uJiajtQCdRwJYr91ooxNwzicnkR8Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"></image></view>
+      <view class="jianzhu_text">
+        <view class="jianzhu_name">射击馆</view>
+        <view>aaaaaaaaaaaa</view>
+        <view class="date_style">上传时间：2022-1-1</view>
+      </view>
+    </view>
+
+    <view class="jianzhu_item clear">
+      <view class="jianzhu_image"><image mode="" src="https://mmbiz.qpic.cn/sz_mmbiz_png/DtSAcSmkZRZutTbLkB13T0KtOD8q9yxOUN0yVepEQcCNeHlKC80K2NmfTg9uJiajtQCdRwJYr91ooxNwzicnkR8Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"></image></view>
+      <view class="jianzhu_text">
+        <view class="jianzhu_name">射击馆</view>
+        <view>aaaaaaaaaaaa</view>
+        <view class="date_style">上传时间：2022-1-1</view>
+      </view>
+    </view>
+
+
+    <view class="jianzhu_item clear">
+      <view class="jianzhu_image"><image mode="" src="https://mmbiz.qpic.cn/sz_mmbiz_png/DtSAcSmkZRZutTbLkB13T0KtOD8q9yxOUN0yVepEQcCNeHlKC80K2NmfTg9uJiajtQCdRwJYr91ooxNwzicnkR8Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"></image></view>
+      <view class="jianzhu_text">
+        <view class="jianzhu_name">射击馆</view>
+        <view>aaaaaaaaaaaa</view>
+        <view class="date_style">上传时间：2022-1-1</view>
+      </view>
+    </view>
+    
   </view>
+
+  <view>山西警察学院</view>
 </view>
+
+

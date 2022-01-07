@@ -1,1 +1,29 @@
-/* pages/profile/profile.wxss */
+.profile{
+  
+}
+
+.clear::before,.clear::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.profile_navBar image{
+  width: 200rpx;
+  height: 150rpx;
+  float: left;
+}
+.profile_navBar view{
+  font-size: 20px;
+  float: left;
+  margin-left: 20px;
+}
+
+.profile_info{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

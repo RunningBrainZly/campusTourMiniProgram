@@ -1,1 +1,19 @@
-/* pages/search/search.wxss */
+.search{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.search image{
+  width: 50rpx;
+  position: absolute;
+  left: 0;
+}
+
+.search_input{
+  margin-left: 50rpx;
+  border-radius: 5px;
+  border: 1px solid;
+  width: 350rpx;
+}

@@ -1,9 +1,9 @@
 {
   "pages":[
     "pages/home/home",
-    "pages/search/search",
-    "pages/fileUp/fileUp",
     "pages/profile/profile",
+    "pages/fileUp/fileUp",
+    "pages/search/search",
     "pages/index/index",
     "pages/logs/logs"
   ],
