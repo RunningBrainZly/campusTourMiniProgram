@@ -1,0 +1,7 @@
+swiper{
+  margin-left: 7px;
+  margin-right: 7px;
+}
+view,image,swiper{
+  border-radius: 7px;
+}

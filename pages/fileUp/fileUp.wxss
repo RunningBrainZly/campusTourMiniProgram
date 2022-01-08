@@ -3,7 +3,10 @@
   display: block;
   clear: both;
 }
-
+.navBar{
+  margin-left: 7px;
+  margin-right: 7px;
+}
 
 .navBar_text{
   font-size: 20px;
@@ -14,7 +17,8 @@
   right: 10px;
 }
 .file_upload_form{
-
+  margin-left: 7px;
+  margin-right: 7px;
 }
 .file_upload_form image{
   width: 250rpx;

@@ -1,5 +1,6 @@
 .profile{
-  
+  margin-left: 7px;
+  margin-right: 7px;
 }
 
 .clear::before,.clear::after{
