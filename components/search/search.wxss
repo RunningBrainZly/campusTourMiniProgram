@@ -1,0 +1,8 @@
+.search_components{
+  text-align: center;
+  background-color: #fff;
+  line-height: 60rpx;
+  border: solid 1rpx black;
+  margin-bottom: 10rpx;
+  border-radius: 8rpx;
+}

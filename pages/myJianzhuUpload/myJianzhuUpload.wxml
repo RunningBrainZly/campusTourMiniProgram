@@ -1,0 +1,43 @@
+<!--pages/myJianzhuUpload/myJianzhuUpload.wxml-->
+<view class="myJianzhuUpload">
+  <view class="myJianzhuUpload_title">
+    文章管理
+  </view>
+  <view class="myJianzhuUpload_content">
+  <view
+  class="myJianzhuUpload_content_item  clear"
+  wx:for="{{jianzhus}}"
+    wx:key="jianzhuId"
+  >
+  <navigator 
+    url="../jianzhuShow/jianzhuShow?jianzhuId={{item.jianzhuId}}&schoolId={{item.schoolId}}"
+    >
+    <image mode="scaleToFill" class="content_image"
+      src="{{item.jianzhuImage?item.jianzhuImage:'https://tse1-mm.cn.bing.net/th/id/R-C.92b8f0d65775395c67b42f52c6bfe941?rik=sA11xsU2qAQQbw&riu=http%3a%2f%2fpic.616pic.com%2fys_img%2f00%2f14%2f89%2fCmQmn0veD3.jpg&ehk=JClmfbFTLfDRT4ecBnLCp5tXJVCun3oAo%2fWYRtRM5gI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1'}}" 
+      ></image>
+      <view class="content_text">
+        <view class="jianzhu_name">{{item.jianzhuName}}</view>
+        <view class="jianzhu_text">{{item.jianzhuText}}</view>
+        <view class="date_style">
+          <view class="nickname">
+          {{item.user.nickName}}
+          </view>
+          <view class="jianzhu_upload_date">{{item.uploadDate}}</view>
+        </view>
+      </view>
+    </navigator>
+    <view class="content_button">
+      <button class="content_button_item" 
+      style="padding: 15rpx 0;width: 25%;"
+      bindtap="deleteUserJianzhuInfo"
+      data-jianzhuId="{{item.jianzhuId}}"
+      type="warn">删除</button>
+      <button class="content_button_item"
+      bindtap="updateUserJianzhuInfo"
+      style="padding:15rpx 0;width: 25%;"
+      data-jianzhuId="{{item.jianzhuId}}"
+      >编辑</button>
+    </view>
+  </view>
+  </view>
+</view>

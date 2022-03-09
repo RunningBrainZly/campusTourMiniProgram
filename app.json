@@ -1,45 +1,49 @@
 {
-  "pages":[
-    "pages/home/home",
+  "pages": [
+    "pages/index/index",
     "pages/profile/profile",
     "pages/fileUp/fileUp",
     "pages/search/search",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/jianzhuShow/jianzhuShow",
+    "pages/myProfile/myProfile",
+    "pages/myJianzhuUpload/myJianzhuUpload",
+    "pages/adminPage/adminPage",
+    "pages/jianzhuArticle/jianzhuArticle"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "校园浏览小程序",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "backgroundColor": "#fafafa",
     "list": [
       {
-      "pagePath": "pages/home/home",
-      "text": "首页",
-      "iconPath": "./images/home.png",
-      "selectedIconPath": "./images/home-select.png"
-    },
-    {
-      "pagePath": "pages/search/search",
-      "text": "搜索",
-      "iconPath": "./images/search.png",
-      "selectedIconPath": "./images/search-select.png"
-    },
-    {
-      "pagePath": "pages/fileUp/fileUp",
-      "text": "文件上传",
-      "iconPath": "./images/file-upload.png",
-      "selectedIconPath": "./images/file-upload-select.png"
-    },
-    {
-      "pagePath": "pages/profile/profile",
-      "text": "我的",
-      "iconPath": "./images/profile.png",
-      "selectedIconPath": "./images/profile-select.png"
-    }
-  ]
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./icons/home.png",
+        "selectedIconPath": "./icons/home-select.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "./icons/search.png",
+        "selectedIconPath": "./icons/search-select.png"
+      },
+      {
+        "pagePath": "pages/fileUp/fileUp",
+        "text": "文件上传",
+        "iconPath": "./icons/file-upload.png",
+        "selectedIconPath": "./icons/file-upload-select.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "./icons/profile.png",
+        "selectedIconPath": "./icons/profile-select.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

@@ -1,16 +1,35 @@
+<block wx:if="{{isLogin}}">
+  <button bindtap="getUserProfile">登录</button>
+</block>
+
+<block wx:else="">
+  <navigator class="profile_navBar clear" url="../myProfile/myProfile">
+    <image src="{{userInfo.avatarUrl}}" mode="aspectFit">个人头像</image>
+    <view>{{userInfo.nickName}}</view>
+  </navigator>
+</block>
+
 <view class="profile">
-  <view class="profile_navBar clear">
-    <image src="../../images/profile.png" mode="aspectFit">个人头像</image>
-    <view>陆地神仙</view>
-  </view>
-  
-  <view class="profile_info">
-    <view>性别:男</view>
-    <view>出生日期：2021-1-1</view>
-    <view>山西警察学院</view>
-  </view>
-  
   <button open-type="contact" style="width: 100%;">打开客服</button>
   <button open-type="feedback" style="width: 100%;">打开用户反馈</button>
   <button open-type="openSetting" style="width: 100%;">打开授权设置页</button>
+
+
+  <view class="profile_info">
+    <!-- 点开后根据用户id查询文章列表
+          文章可以删除和修改
+     -->
+    <navigator class="profile_info_item" url="../myJianzhuUpload/myJianzhuUpload">
+      <image src="../../icons/editArticle.png" mode="heightFix"></image>
+      <view>我发布的文章</view>
+    </navigator>
+    <!-- 点开后登录，可以查看所有建筑信息，通过审核，可以删除建筑，可以根据学校查看建筑
+     -->
+     <navigator class="profile_info_item" url="../adminPage/adminPage" bindtap="loginAdmin">
+      <image src="../../icons/login.png" mode="heightFix"></image>
+      <view>管理员登录</view>
+     </navigator>
+  </view>
+  
+  
 </view>

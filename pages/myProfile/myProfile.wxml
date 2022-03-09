@@ -1,0 +1,32 @@
+<view class="myprofile">
+    <view class="myprofileInfo">
+    <view class="myprofileInfo_item clear">
+        <view class="myprofileInfo_item_text">昵称</view>
+        <view class="myprofileInfo_item_content">{{userInfo.nickName}}</view>
+    </view>
+    <view class="myprofileInfo_item clear">
+        <view class="myprofileInfo_item_text">头像</view>
+        <view class="myprofileInfo_item_content"><image src="{{userInfo.avatarUrl}}" mode="heightFix"></image></view>
+    </view>
+    <view class="myprofileInfo_item clear">
+        <view class="myprofileInfo_item_text">性别</view>
+        <view class="myprofileInfo_item_content">{{userInfo.userSex}}</view>
+    </view>
+    <view class="myprofileInfo_item clear">
+        <view class="myprofileInfo_item_text">出生日期</view>
+        <input class="myprofileInfo_item_content"
+        bindinput="getInput"
+        value="{{userInfo.userBirthday}}"
+        />
+    </view>
+    <view class="myprofileInfo_item clear">
+        <view class="myprofileInfo_item_text">学校</view>
+        <input
+        class="myprofileInfo_item_content"
+        bindinput="getInput2"
+        value="{{schoolName?schoolName:''}}" 
+        />
+    </view>
+</view>
+<button type="primary" class="myprofile_submit" bindtap="updateUserInfo">确认修改</button>
+</view>

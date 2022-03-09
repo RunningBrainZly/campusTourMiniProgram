@@ -1,0 +1,25 @@
+/* 
+  微信小程序不支持*通配符
+*/
+page,view,text,swiper,swiper-item,image,navigator{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* 
+  原生css和小程序wxss都支持变量的使用
+  变量定义在最外层page中
+*/
+page{
+  --item_backgroupcolor:#f4f4f4;
+
+  /* 
+    设计稿是375px的话，1px = 2rpx
+    如果字体大小是16px的话，rpx就是32rpx
+    就会实现页面大小发生改变，字体大小也改变
+  */
+  font-size: 32rpx;
+}

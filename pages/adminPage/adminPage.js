@@ -1,11 +1,11 @@
-// pages/home/home.js
+// pages/adminPage/adminPage.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    schoolName:"山西警察学院"
+
   },
 
   /**

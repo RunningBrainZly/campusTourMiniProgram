@@ -1,0 +1,67 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "我的界面",
+          "pathName": "pages/profile/profile",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "文件上传",
+          "pathName": "pages/fileUp/fileUp",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "文章详情页",
+          "pathName": "pages/jianzhuShow/jianzhuShow",
+          "query": "jianzhuId=2&schoolId=1",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "搜索",
+          "pathName": "pages/search/search",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "个人详情页",
+          "pathName": "pages/myProfile/myProfile",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "用户发布建筑页",
+          "pathName": "pages/myJianzhuUpload/myJianzhuUpload",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "管理员页面",
+          "pathName": "pages/adminPage/adminPage",
+          "query": "",
+          "scene": null,
+          "launchMode": "default"
+        }
+      ]
+    }
+  }
+}

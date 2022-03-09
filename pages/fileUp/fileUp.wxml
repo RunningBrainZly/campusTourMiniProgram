@@ -1,14 +1,28 @@
 <view class="navBar clear">
   <view class="navBar_text">信息上传</view>
-  <button type="primary" class="file_upload_button" size="mini">上传</button>
+  <button type="primary" class="file_upload_button" size="mini" 
+  bindtap="insertJianZhu"
+  >上传</button>
 </view>
 
 <view class="file_upload_form">
-  <input type="text" value="学校名：{{schoolName}}" disabled/>
-  <input type="text" value="用户名：{{schoolName}}" disabled />
-  <input type="text" value="上传时间：2022-1-1" disabled />
-  <text>建筑名：</text><input type="text" placeholder="输入建筑名称"/>
-  <text>建筑介绍：</text><input type="text" placeholder="输入建筑简介"/>
-  <view>添加图片：</view>
-  <image src="../../images/file-upload.png" mode="widthFix"></image>
+  <text>建筑名称：</text><input type="text" bindinput="getInput" placeholder="输入建筑名称"/>
+
+  <view class="file_content">
+    <view class="file_content_text">
+      <text>建筑介绍：</text><textarea type="text" bindinput="getInput2" placeholder="输入建筑简介"/>
+    </view>
+    <view class="file_content_image">
+      <button 
+      style="width: 190rpx;height: 190rpx;margin: 0;margin-top: 20rpx;margin-left: 30rpx;" 
+      class="file_upload_image"
+      bindtap="clickUploadImage"
+      >+</button>
+      <view 
+      class="uploadImage_items" 
+      wx:for="{{uploadImage_url}}"
+      wx:key="*this"
+      ><uploadImage src="{{item}}"  binddeleteImage="deleteImage" data-index="{{index}}"></uploadImage></view>
+    </view>  
+  </view>
 </view>

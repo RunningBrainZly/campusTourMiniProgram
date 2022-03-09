@@ -1,0 +1,16 @@
+<!--pages/jianzhuArticle/jianzhuArticle.wxml-->
+<view class="jianzhuArticle">
+  <view class="pageTitle">文件编辑</view>
+
+  <view class="page_content">
+    <view class="jianzhu_name">{{jianzhuInfo.jianzhuName}}</view>
+    <view class="jianzhu_text">{{jianzhuInfo.jianzhuText}}</view>
+    <view class="jianzhu_image">
+    <image src="{{jianzhuInfo.jianzhuImage}}"></image>
+    </view>
+    <view class="update_button">
+      <button bindtap="updateJianzhuInfo">提交修改</button>
+    </view>
+  </view>
+  
+</view>

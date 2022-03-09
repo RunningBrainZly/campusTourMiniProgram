@@ -1,4 +1,26 @@
 <view class="search">
-  <image src="../../images/search-select.png" mode="widthFix"></image>
-  <input class="search_input" type="text" placeholder="请输入要搜索的学校"/>
+  <input 
+  value="{{inputValue}}"
+  class="search_input" type="text" placeholder="请输入要搜索的学校"
+  confirm-type="search"
+  bindinput="getUserSearch"
+  type="text"
+  confirm-type="search"
+  focus="true"
+  />
+  <button hidden="{{!isFocus}}"
+  bindtap="Restart"
+  >取消</button>
+</view>
+<view class="search_content">
+    <navigator 
+  class="search_item" 
+  url="../index/index?schoolId={{item.schoolId}}"
+  open-type="reLaunch"
+  wx:for="{{schoolList}}"
+  wx:key="schoolId"
+  
+  >
+    {{item.schoolName}}
+  </navigator>
 </view>

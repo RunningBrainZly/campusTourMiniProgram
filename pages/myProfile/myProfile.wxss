@@ -1,0 +1,48 @@
+/* pages/myProfile/myProfile.wxss */
+.clear::before,.clear::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.myprofile{
+  padding: 30rpx;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+.myprofileInfo{
+  padding: 30rpx;
+  background-color: #ffffff;
+  box-shadow:0rpx 0rpx 9rpx 3rpx #CFCFCF;
+}
+
+.myprofileInfo_item{
+  width: 100%;
+  border-bottom: solid 2rpx #CFCFCF;
+  font-size: 26rpx;
+}
+
+.myprofileInfo_item_text{
+  float: left;
+  height: 150rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myprofileInfo_item_content{
+  float: right;
+  text-align: right;
+  height: 100%;
+  height: 150rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#6E6E6E;
+}
+.myprofileInfo_item_content image{
+  height: 80%;
+  border-radius: 50%;
+}
+.myprofile_submit{
+  margin-top: 30rpx;
+}

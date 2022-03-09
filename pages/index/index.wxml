@@ -1,23 +1,57 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
+<view class="home">
+  <view class="search_component">
+  <search></search>
+</view>
+<swiper autoplay
+  indicator-dots
+  interval="3000"
+  circular
+  >
+
+  <!-- 
+    swiper标签默认：100% * 150
+    image标签默认：320 * 240
+    图片素材的宽高：987 * 740
+   -->
+  <swiper-item
+    wx:for="{{swiperList}}"
+    wx:key="jianzhuId"
+  >
+    <navigator open-type="navigate" url="../jianzhuShow/jianzhuShow?jianzhuId={{item.jianzhuId}}&schoolId={{item.schoolId}}">
+      <image mode="widthFix" src="{{item.jianzhuImage}}" show-menu-by-longpress="true"></image>
+    </navigator>
+  </swiper-item>
+</swiper>
+
+<view class="home_content">
+
+  <view class="school_info">{{schoolName}}</view>
+
+  <view class="jianzhu_content clear">
+
+    <view class="jianzhu_item clear"
+      wx:for="{{jianzhuInfo}}"
+      wx:key="jianzhuId"
+    >
+    <navigator open-type="navigate" url="../jianzhuShow/jianzhuShow?jianzhuId={{item.jianzhuId}}&schoolId={{item.schoolId}}">
+      <view class="jianzhu_image">
+      <image mode="" src="{{item.jianzhuImage?item.jianzhuImage:'https://tse1-mm.cn.bing.net/th/id/R-C.92b8f0d65775395c67b42f52c6bfe941?rik=sA11xsU2qAQQbw&riu=http%3a%2f%2fpic.616pic.com%2fys_img%2f00%2f14%2f89%2fCmQmn0veD3.jpg&ehk=JClmfbFTLfDRT4ecBnLCp5tXJVCun3oAo%2fWYRtRM5gI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1'}}" 
+      ></image>
       </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+      <view class="jianzhu_text">
+        <view class="jianzhu_name">{{item.jianzhuName}}</view>
+        <view class="jianzhu_jieshao">{{item.jianzhuText}}</view>
+        <view class="date_style">
+          <view>{{item.user.nickName}}</view>
+          <view>{{item.uploadDate}}</view>
+        </view>
+      </view>
+    </navigator>
+    </view>
+    
   </view>
 </view>
+</view>
+
+
+

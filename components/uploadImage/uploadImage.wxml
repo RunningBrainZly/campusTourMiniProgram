@@ -1,0 +1,4 @@
+<view class="uploadImage">
+  <image class="uploadImage_image" src="{{src}}"></image>
+  <icon type="cancel" class="uploadImage_icon" bindtap="deleteImage" size="35" ></icon>
+</view>

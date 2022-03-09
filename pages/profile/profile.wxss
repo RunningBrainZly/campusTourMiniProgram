@@ -8,6 +8,9 @@
   display: block;
   clear: both;
 }
+.profile_navBar{
+  background-color: #F8F8F8;
+}
 
 .profile_navBar image{
   width: 200rpx;
@@ -23,6 +26,16 @@
 .profile_info{
   margin-top: 25px;
   margin-bottom: 25px;
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+.profile_info_item{
+  flex: 1;
+  height: 150rpx;
+}
+.profile_info_item image{
+  height: 70%;
 }
 button{
   margin-top: 10px;

@@ -20,6 +20,24 @@
   margin-left: 7px;
   margin-right: 7px;
 }
-.file_upload_form image{
-  width: 250rpx;
+
+
+.file_content{
+  background-color: #ccc; 
+  padding: 10rpx 10rpx;
+}
+.file_content_image{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.file_content_image button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64rpx;
+}
+.uploadImage_items{
+  margin-left: 30rpx;
+  margin-top: 20rpx;
 }

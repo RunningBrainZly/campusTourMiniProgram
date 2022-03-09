@@ -1,0 +1,16 @@
+<view class="jianzhu_show">
+  <view class="show_title">
+    {{schoolName}}
+  </view>
+  <view class="show_title2">
+    {{jianzhuInfo.jianzhuName}}
+  </view>
+  <view class="show_content">{{jianzhuInfo.jianzhuText}}</view>
+  <view class="show_image"><image src="{{jianzhuInfo.jianzhuImage?jianzhuInfo.jianzhuImage:'https://tse1-mm.cn.bing.net/th/id/R-C.92b8f0d65775395c67b42f52c6bfe941?rik=sA11xsU2qAQQbw&riu=http%3a%2f%2fpic.616pic.com%2fys_img%2f00%2f14%2f89%2fCmQmn0veD3.jpg&ehk=JClmfbFTLfDRT4ecBnLCp5tXJVCun3oAo%2fWYRtRM5gI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1'}}"></image></view>
+  <view class="show_bottom">
+    <view>作者：{{jianzhuInfo.user.nickName}}</view>
+    <view>上传时间：{{jianzhuInfo.uploadDate}}</view>
+    <view>最近修改时间：{{jianzhuInfo.uploadDate}}</view>
+  </view>
+</view>
+

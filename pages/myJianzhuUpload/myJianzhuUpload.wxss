@@ -1,0 +1,68 @@
+/* pages/myJianzhuUpload/myJianzhuUpload.wxss */
+.clear::before,.clear::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.myJianzhuUpload{
+  margin: 30rpx;
+}
+.myJianzhuUpload_title{
+  font-weight: 900;
+  font-size: 40rpx;
+  border-bottom: solid 1rpx black;
+  padding-bottom: 10rpx;
+}
+.myJianzhuUpload_content_item{
+  margin-top: 30rpx;
+  width: 100%;
+  height: 230rpx;
+}
+.myJianzhuUpload_content_item navigator{
+  width: 100%;
+  height: 175rpx;
+}
+.content_image{
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+.content_text{
+  width: 45%;
+  float: left;
+  margin-left: 30rpx;
+}
+.jianzhu_name{
+
+}
+.jianzhu_text{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.date_style{
+  font-size: 24rpx;
+  color: #707582;
+  margin-top: 25rpx;
+}
+.nickname{
+
+}
+.jianzhu_upload_date{
+
+}
+.content_button{
+  width: 100%;
+  margin-top: 10rpx;
+}
+/* 
+  使两个按钮靠右显示
+  然后做出按钮的功能
+
+*/
+.content_button_item{
+  font-size: 30rpx;
+  float: right;
+}

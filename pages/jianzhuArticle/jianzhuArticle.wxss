@@ -1,0 +1,26 @@
+/* pages/jianzhuArticle/jianzhuArticle.wxss */
+.jianzhuArticle{
+  margin: 30rpx;
+}
+.pageTitle{
+  font-weight: 900;
+  font-size: 40rpx;
+  border-bottom: solid 1rpx black;
+  padding-bottom: 10rpx;
+}
+.page_content{
+  margin-top: 30rpx;
+}
+.jianzhu_name{
+
+}
+.jianzhu_text{
+  margin-top: 20rpx;
+}
+.jianzhu_image{
+  margin-top: 20rpx;
+  text-align: center;
+}
+.update_button{
+  margin-top: 30rpx;
+}
