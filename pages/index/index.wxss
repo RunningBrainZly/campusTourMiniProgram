@@ -1,0 +1,77 @@
+/* 
+  加上浮动要后清除浮动，不然后面的元素也会紧挨着上来
+*/
+.clear::before,.clear::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.home{
+  background-color: #f8f8f8;
+  margin-left: 14rpx;
+  margin-right: 14rpx;
+}
+
+swiper{
+  height: 555rpx;
+}
+swiper image{
+  width: 100%;
+}
+
+.home_content{
+  
+}
+
+.school_info{
+  background-color:#fff;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  text-align: center;
+  box-shadow: 0 0 10rpx 5rpx #CFCFCF;
+}
+
+.jianzhu_content{
+  margin-top: 30rpx;
+}
+/* 
+  加浮动让元素在一行排列:加完浮动要清除浮动，不然后面的元素会跟着上来
+*/
+.jianzhu_item{
+  margin-top: 16rpx;
+  background-color:#fff;
+  box-shadow: 0 0 10rpx 5rpx #CFCFCF;
+}
+.jianzhu_image{
+  float: left;
+}
+.jianzhu_image image{
+  width: 350rpx;
+  height: 200rpx;
+}
+.jianzhu_text{
+  float: left;
+  width: 350rpx;
+  height: 200rpx;
+  position: relative;
+  margin-left: 10px;
+}
+.jianzhu_name{
+  margin-top: 2px;
+}
+
+.jianzhu_jieshao{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 26rpx;
+  margin-top: 6rpx;
+}
+
+.date_style{
+  font-size: 24rpx;
+  color: #707582;
+  position: absolute;
+  bottom: 0;
+}
